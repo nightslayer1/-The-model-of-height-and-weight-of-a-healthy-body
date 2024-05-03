@@ -28,7 +28,18 @@ Average weight in pound (w)
 162
 source-:https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/body-weight-and-cancer-risk/adult-bmi.html
 
+import random as r 
+import math as m 
+import numpy as np 
+import matplotlib as mp 
+import matplotlib.pyplot as plt
+
+
 I used this function to help me find BestfitLine.
+
+# Create the list for the data h is the heigh of the person w is the average wei!
+h= [58,60,61,64,66,69,70,71,72,73] 
+w= [102,109,113,125,133,146,149,153, 158,162]
 def bestFitLine(x,y) : 
     N= len (x) 
     sx=0 # the sum of x values 
@@ -46,6 +57,8 @@ def bestFitLine(x,y) :
 
 
 I used this function to find correlation coefficient
+
+# Create the function to find connelation coefficient.
 def corrCoefficient(x,y):
     N=len (x) 
     sx=0 # the sum of x values 
@@ -62,6 +75,7 @@ def corrCoefficient(x,y):
         return r
 
 I also used this function to make the scatter plot.
+
 # Create bubble vector 
 bubb= []
 for i in range(len(h)): 
