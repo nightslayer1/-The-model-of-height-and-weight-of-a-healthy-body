@@ -26,6 +26,6 @@ Average weight in pound (w)
 153
 158
 162
-
 source-:https://www.cancer.org/cancer/risk-prevention/diet-physical-activity/body-weight-and-cancer-risk/adult-bmi.html
 
+For Healthy body weight, 100weight of the body-predicted weight in the model you foundpredicted weight in the model you found<10%
