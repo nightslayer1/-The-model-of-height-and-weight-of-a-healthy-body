@@ -73,32 +73,3 @@ def corrCoefficient(x,y):
         sy2=sy2+y[i]*y[i] 
         r=(N*sxy-sx*sy)/np. sqrt((N*sx2-sx*sx) * (N*sy2-sy*sy)) 
         return r
-
-I also used this function to make the scatter plot.
-
-# Create bubble vector 
-bubb= []
-for i in range(len(h)): 
-    bubb. append(w[i]) 
-    
-# Draw the scatter plot 
-plt.scatter(h,w,c="pink",marker="*",s=bubb) 
-    
-# Label of axis 
-plt. xlabel ("Height of the body (h)") 
-plt. ylabel ("Weight of the body (w)")
-    
-# Title the graph 
-plt. title("Scatter plot and Graph of the Model") 
-    
-# Plot graph of the model
-x=np. linspace (50,80,100)
-y=[] 
-for i in x: 
-        y. append(i*bestFitLine(h,w)[0]+bestFitLine(h,w)[1]) 
-plt. plot(x,y) 
-        
-# Write equation of model in the graph
-plt. text (54,80, "w=4.024h-132.22")
-# display the graph, Labels and title
-plt. show()
